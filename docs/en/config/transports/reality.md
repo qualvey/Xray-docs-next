@@ -34,7 +34,7 @@ For more information, see the [REALITY project](https://github.com/XTLS/REALITY)
           "xver": 0,
           "serverNames": ["example.com", "www.example.com"],
           "privateKey": "",
-          "minClientVer": "26.3.27",
+          "minClientVer": "",
           "maxClientVer": "",
           "maxTimeDiff": 0,
           "shortIds": ["", "0123456789abcdef"],
@@ -110,8 +110,6 @@ Required. Generate it with `./xray x25519`.
 > `minClientVer`: string
 
 Optional. Minimum Xray client version, in `x.y.z` format.
-
-The default value is `26.3.27`. Lowering this value allows older clients to connect, but their TLS fingerprints differ noticeably from those of real browsers and may be classified as non-browser traffic by DPI. Lower this value at your own risk.
 
 > `maxClientVer`: string
 

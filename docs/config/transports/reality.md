@@ -34,7 +34,7 @@ REALITY 只是修改了 TLS，客户端的实现只需要轻度修改完全随�
           "xver": 0,
           "serverNames": ["example.com", "www.example.com"],
           "privateKey": "",
-          "minClientVer": "26.3.27",
+          "minClientVer": "",
           "maxClientVer": "",
           "maxTimeDiff": 0,
           "shortIds": ["", "0123456789abcdef"],
@@ -110,8 +110,6 @@ REALITY 只是修改了 TLS，客户端的实现只需要轻度修改完全随�
 > `minClientVer` : string
 
 选填，客户端 Xray 最低版本，格式为 `x.y.z`。
-
-默认值为 `26.3.27`。降低此值可允许旧版客户端连接，但旧版客户端的 TLS 指纹与真实浏览器存在明显差异，可能被 DPI 识别为非浏览器流量。降低此值的风险由使用者自行承担。
 
 > `maxClientVer` : string
 
